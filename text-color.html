@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Text Color</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/brainTraining_textColor.css">
+
+</head>
+<body>
+	<div class="BTCSS_wrapper">
+		<div class="BTCSS_page-textColor">
+			<div class="comtainer">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="text text-center" id="BTJS_text">BLUE</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="color text-center" id="BTJS_color">BLUE</div>
+					</div>
+					<div class="BTCSS_btn-yes-no">
+						<a class="btn btn-info text-center" href="javascropt:void(0);">NO</a>
+						<a class="btn btn-info text-center" href="javascropt:void(0);">YES</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		function random (min,max) {
+			return Math.floor(Math.random()*(max-min+1)+min);
+		}
+
+		var text = ['Red', 'Yellow', 'Blue', 'Black'],
+			color = ['#e74c3c', '#f1c40f', '#3498db', '#000'];
+
+		$('#BTJS_text').text(text[random(0,3)]);
+		$('#BTJS_color').text(text[random(0,3)]).css('color', color[random(0,3)]);
+	</script>
+</body>
+</html>

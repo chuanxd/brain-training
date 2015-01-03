@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brain Training</title>
+	<link rel="stylesheet" href="./css/brainTraining.css">
+</head>
+<body>
+	<h1>Hello!</h1>
+	<div id="myCounter"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		var milisec = 0
+        var seconds = 30
+        document.getElementById("myCounter").innerHTML = '30';
+
+        function display() {
+            if (milisec <= 0) {
+                milisec = 9
+                seconds -= 1
+            }
+            if (seconds <= -1) {
+                milisec = 0
+                seconds += 1
+            }
+            else
+                milisec -= 1
+            document.getElementById("myCounter").innerHTML = seconds;
+            setTimeout("display()", 100)
+        }
+        //display();
+	</script>
+</body>
+</html>

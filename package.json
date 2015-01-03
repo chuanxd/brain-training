@@ -1,0 +1,30 @@
+{
+  "name": "brain-training",
+  "version": "1.0.0",
+  "description": "A Brain Training",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-compass": "^2.0.3",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-watch": "^3.0.0",
+    "gulp-webserver" : "^0.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "brain-training"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Timmy Chang",
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+@import 'brainTraining';
+
+.BTCSS_page-textColor {
+	position: relative;
+	top: 60px;
+
+	.btn {
+		width: 55px;
+	}
+	
+	.BTCSS_btn-yes-no {
+		position: relative;
+		left: 50%;
+		margin: 0 0 0 -57px;
+	}
+}
